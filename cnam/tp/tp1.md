@@ -43,7 +43,7 @@ $ cd $HOME/tp/virt
 
 http://wiki.qemu.org/Download
 
-prendre la dernière version → **2.7.0**
+- Prendre la dernière version : **2.7.0**
 
 ou directement :
 ```bash
