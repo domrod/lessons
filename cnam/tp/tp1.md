@@ -24,7 +24,7 @@ kvm                   287708 1 kvm_intel
 
 vous avez l'accélération matérielle sur votre machine. Sinon, essayez (sous **root**)
 ```bash
-	$ /sbin/modprobe kvm
+$ /sbin/modprobe kvm
 ```
 Il peut parfois être nécessaire de rebooter son PC et d'activer l'accélération matérielle dans le BIOS (si son matériel dispose effectivement de cette fonctionnalité, ce qui n'est pas le cas de tous les ordinateurs portables, même récents).
 
