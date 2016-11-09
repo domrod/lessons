@@ -39,7 +39,7 @@ $ mkdir -p $HOME/tp/virt
 $ cd $HOME/tp/virt
 ```
 
-- Aller dans ce répertoire et récupérer qemu-kvm à partir du lien suivant :
+- Aller dans ce répertoire et récupérer **qemu-kvm** à partir du lien suivant :
 
 http://wiki.qemu.org/Download
 
@@ -158,20 +158,24 @@ ne gardez pas l'option "Environnement de bureau Debian". Celle-ci installe un tr
 
 - CPU :
 
-
 	-cpu host
 
-	Performance :
+- Performance :
+
 	driver=virtio-net-pci (réseau, essais en performance)
 
-	Élasticité :
+- Élasticité :
+
 	-balloon virtio (élasticité mémoire)
 
-Accès SSH
+- Accès SSH
 
 	-redir tcp:5522::22
+
 puis, utiliser le « user » créé à l'installation
-	ssh « user »@localhost -p 5522
+```bash
+ssh « user »@localhost -p 5522
+```
 
 Tester si le système virtualisé détecte la virtualisation : dmesg | grep -i kvm
 Environnement de test
