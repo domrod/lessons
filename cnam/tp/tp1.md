@@ -17,14 +17,12 @@ L'environnement à utiliser sera celui des PC du CNAM sous Linux. Veillez donc �
 $ /sbin/lsmod | grep kvm
 ```
 Si vous obtenez quelque chose du genre :
-
 ```bash
 kvm_intel             121968  0
 kvm                   287708 1 kvm_intel
 ```
 
 vous avez l'accélération matérielle sur votre machine. Sinon, essayez (sous **root**)
-
 ```bash
 	$ /sbin/modprobe kvm
 ```
