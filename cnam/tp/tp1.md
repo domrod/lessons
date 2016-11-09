@@ -188,7 +188,7 @@ dmesg | grep -i kvm
 
 Création d'un clone :
 ```bash
-qemu-img create -b vm_master.qcow2 -f qcow2 vm_clone.qcow2
+$ qemu-img create -b vm_master.qcow2 -f qcow2 vm_clone.qcow2
 ```
 
 - Inspecter à froid l'image disque de la VM
@@ -202,21 +202,28 @@ Inspection avec fdisk :
 $ fdisk -l vm_clone.raw
 ```
 
-
-
 #### Application : création d'un site WEB
 
 - Accès WEB + site WEB dans la VM
+```bash
+-redir tcp:5580::80
+```
 
-	-redir tcp:5580::80
+##### Dans la **VM**
+- Installer Apache et Php
+```bash
+$ aptitude install apache2 php5
+```
+- Éditer */var/www/index.html*
+- Relancer apache
+- Ouvrir un navigateur à l'adresse
 
-	Dans la VM :
-		aptitude install apache2 php5
-		éditer /var/www/index.html
-		relancer apache
-		ouvrir un navigateur à l'adresse   http://localhost:5580
 
-		créér /var/www/index.php :
+	http://localhost:5580
+
+- Créér /var/www/index.php :
+
+```php
 		<?php
 		phpinfo();
 		?>
@@ -227,3 +234,4 @@ $ fdisk -l vm_clone.raw
 		echo «<p>En direct du TP de virtualisation></p>»;
 		echo «<p>Sign&eacute; : ...></p>»;
 		?>
+```
