@@ -157,44 +157,56 @@ ne gardez pas l'option "Environnement de bureau Debian". Celle-ci installe un tr
 #### Tests de différents paramétrages pour la VM
 
 - CPU :
-
+```bash
 	-cpu host
-
+```
 - Performance :
-
+```bash
 	driver=virtio-net-pci (réseau, essais en performance)
-
+```
 - Élasticité :
-
+```bash
 	-balloon virtio (élasticité mémoire)
-
+```
 - Accès SSH
-
+```bash
 	-redir tcp:5522::22
-
+```
 puis, utiliser le « user » créé à l'installation
 ```bash
-ssh « user »@localhost -p 5522
+ssh debian_user@localhost -p 5522
 ```
 
-Tester si le système virtualisé détecte la virtualisation : dmesg | grep -i kvm
-Environnement de test
+- Tester si le système virtualisé détecte la virtualisation :
+```bash
+dmesg | grep -i kvm
+```
 
-Utiliser des clones pour la suite :
-clone :
+## Environnement de test
+
+- Utiliser des clones pour la suite
+
+Création d'un clone :
+```bash
 qemu-img create -b vm_master.qcow2 -f qcow2 vm_clone.qcow2
+```
 
-Inspecter à froid l'image disque de la VM
-conversion au format raw
-$HOME/tp/virt/qemu/bin/qemu-img convert -f qcow2 -O raw vm_clone.qcow2 vm_clone.raw
+- Inspecter à froid l'image disque de la VM
 
-inspection avec fdisk
-	fdisk -l vm_clone.raw
+Conversion au format raw :
+```bash
+$ $HOME/tp/virt/qemu/bin/qemu-img convert -f qcow2 -O raw vm_clone.qcow2 vm_clone.raw
+```
+Inspection avec fdisk :
+```bash
+$ fdisk -l vm_clone.raw
+```
 
 
-Application : création d'un site WEB
 
-Accès WEB + site WEB dans la VM
+#### Application : création d'un site WEB
+
+- Accès WEB + site WEB dans la VM
 
 	-redir tcp:5580::80
 
