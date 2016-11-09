@@ -7,7 +7,7 @@ Puis, il s'agit de créer une machine virtuelle qui servira de base pour des env
 ### Informations pratiques
 Ce TP fait appel à la ligne de commandes, et vous demande donc un effort spécial pour entrer correctement au clavier les différentes lignes présentées ci-après.
 
-Pour information, il ne faut pas confondre les symbôles «** - **» et «** _ **» , ni le **O** (la voyelle o majuscule) et le **0** (zéro). La variable **$HOME** désigne le répertoire utilisateur courant.
+Pour information, il ne faut pas confondre les symbôles ** - ** et ** _ ** , ni le **O** (la voyelle o majuscule) et le **0** (zéro). La variable **$HOME** désigne le répertoire utilisateur courant.
 
 Par ailleurs, lorsque les commandes sont trop longues pour figurer sur une seule ligne dans cet énoncé, on utilise ici le symbole « **\** », qui veut juste dire que la commande à taper sur l'ordinateur continue sur la ligne suivante. En pratique, on ne tape donc pas le symbole « **\** » sur son clavier, lorsqu'on entre la commande sur la console d'ordinateur.
 
