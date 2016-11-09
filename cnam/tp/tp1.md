@@ -227,11 +227,13 @@ $ aptitude install apache2 php5
 		<?php
 		phpinfo();
 		?>
-
-		Puis, créer un message :
+```
+- Puis, créer un message :
+```php
 		<?php
 		echo «<h1>CNAM></h1>»;
 		echo «<p>En direct du TP de virtualisation></p>»;
 		echo «<p>Sign&eacute; : ...></p>»;
 		?>
 ```
+- Recharger la page web
