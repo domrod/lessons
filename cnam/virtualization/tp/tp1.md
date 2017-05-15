@@ -47,8 +47,7 @@ http://wiki.qemu.org/Download
 
 ou directement :
 ```bash
-$ wget
-http://download.qemu.org/qemu-2.9.0.tar.xz
+$ wget http://download.qemu.org/qemu-2.9.0.tar.xz
 ```
 
 #### Récupérer une image ISO
