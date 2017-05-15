@@ -131,7 +131,7 @@ $ $HOME/tp/virt/qemu/bin/qemu-system-x86_64 \
 -monitor stdio
 ```
 
-- Pour visualiser celle-ci (si une fenêtre ne s'ouvre pas automatiquent) :
+- Pour visualiser celle-ci (si une fenêtre ne s'ouvre pas automatiquement) :
 
 ```bash
 $ vncviewer localhost:5900
