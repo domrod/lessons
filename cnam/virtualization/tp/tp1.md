@@ -214,7 +214,7 @@ $ fdisk -l vm_clone.raw
 ```bash
 $ aptitude install apache2 php5
 ```
-- Éditer */var/www/index.html*
+- Éditer */var/www/html/index.html*
 - Relancer apache
 - Ouvrir un navigateur à l'adresse
 
