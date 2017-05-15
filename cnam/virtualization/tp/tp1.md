@@ -47,7 +47,8 @@ http://wiki.qemu.org/Download
 
 ou directement :
 ```bash
-$ wget http://wiki.qemu-project.org/download/qemu-2.7.0.tar.bz2
+$ wget
+http://download.qemu.org/qemu-2.9.0.tar.xz
 ```
 
 #### Récupérer une image ISO
@@ -65,12 +66,12 @@ $ wget -c http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-8.6.0-
 
 ```bash
 $ cd $HOME/tp/virt/
-$ tar xvjf qemu-2.7.0.tar.bz2
+$ tar xvJf qemu-2.9.0.tar.xz
 ```
 - Se rendre dans le nouveau répertoire (pour configurer/compiler/installer qemu)
 
 ```bash
-$ cd qemu-2.7.0
+$ cd qemu-2.9.0
 ```
 - Lister les options possibles :
 
