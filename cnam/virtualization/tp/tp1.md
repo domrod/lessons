@@ -57,7 +57,7 @@ Récupérer en parallèle une image iso de **Linux Debian** *netinstall*
 $ mkdir -p $HOME/tp/virt/iso/debian
 $ cd $HOME/tp/virt/iso/debian
 
-$ wget -c http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-8.6.0-amd64-netinst.iso
+$ wget -c http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-8.8.0-amd64-netinst.iso
 ```
 
 #### Compiler QEMU
