@@ -123,7 +123,7 @@ $ $HOME/tp/virt/qemu/bin/qemu-img info vm_debian.qcow2
 $ $HOME/tp/virt/qemu/bin/qemu-system-x86_64 \
 --enable-kvm \
 -drive file=vm_debian.qcow2,media=disk \
--drive file=$HOME/tp/virt/iso/debian/debian-8.6.0-amd64-netinst.iso,media=cdrom \
+-drive file=$HOME/tp/virt/iso/debian/debian-8.8.0-amd64-netinst.iso,media=cdrom \
 -boot order=dc \
 -m 512 -smp 2 \
 -netdev type=user,id=tp1 \
