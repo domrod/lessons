@@ -221,7 +221,7 @@ $ aptitude install apache2 php5
 
 	http://localhost:5580
 
-- Créér /var/www/html/index.php :
+- Créer /var/www/html/index.php :
 
 ```php
 <?php
