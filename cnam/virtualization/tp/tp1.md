@@ -39,9 +39,9 @@ $ mkdir -p $HOME/tp/virt
 $ cd $HOME/tp/virt
 ```
 
-- Aller dans ce répertoire et récupérer **qemu-kvm** à partir du lien suivant :
+- Aller dans ce répertoire et récupérer le fichier source de **qemu-kvm** à partir du lien suivant :
 
-http://wiki.qemu.org/Download
+https://www.qemu.org/download/#source
 
 - Prendre la dernière version : **2.12.0**
 
