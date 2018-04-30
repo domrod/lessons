@@ -227,7 +227,7 @@ $ fdisk -l vm_clone.raw
 ##### Dans la **VM**
 - Installer Apache et Php
 ```bash
-$ aptitude install apache2 php5
+$ apt-get install -y apache2 php
 ```
 - Éditer */var/www/html/index.html*
 - Relancer apache
