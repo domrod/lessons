@@ -246,9 +246,8 @@ phpinfo();
 - Puis, créer un message :
 ```php
 <?php
-echo «<h1>CNAM></h1>»;
-echo «<p>En direct du TP de virtualisation></p>»;
-echo «<p>Sign&eacute; : ...></p>»;
+echo "<h1>CNAM</h1>";
+echo "<p>En direct du TP de virtualisation</p>";
 ?>
 ```
 - Recharger la page web
