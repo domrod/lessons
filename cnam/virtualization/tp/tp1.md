@@ -142,6 +142,21 @@ ne gardez pas l'option "Environnement de bureau Debian". Celle-ci installe un tr
  grand nombre de logiciels, ce qui rend la création de la VM très longue.
  Préférez plutôt la case "serveur SSH"**.
 
+Une fois l'installation terminée, vous pouvez quitter la console `(qemu)`.
+
+Redémarrez la VM avec la commande suivante.
+
+```bash
+$ $HOME/tp/virt/qemu/bin/qemu-system-x86_64 \
+--enable-kvm \
+-drive file=vm_debian.qcow2,media=disk \
+-m 512 -smp 2 \
+-netdev type=user,id=tp1 \
+-device driver=e1000,netdev=tp1,mac=00:52:a1:b2:c3:d4 \
+-usb -device usb-tablet -k fr \
+-monitor stdio
+```
+
 #### Arrêter sa VM
 - Soit en tapant la commande suivante dans la *console qemu*
 
@@ -154,7 +169,7 @@ ne gardez pas l'option "Environnement de bureau Debian". Celle-ci installe un tr
 (debian)$ poweroff
 ```
 
-#### Tests de différents paramétrages pour la VM
+#### Tests de différents paramétrages pour la VM (options à changer lors du démarrage de la VM)
 
 - CPU :
 ```bash
