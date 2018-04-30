@@ -203,7 +203,7 @@ dmesg | grep -i kvm
 
 Création d'un clone :
 ```bash
-$ $HOME/tp/virt/qemu/bin/qemu-img create -b vm_master.qcow2 -f qcow2 vm_clone.qcow2
+$ $HOME/tp/virt/qemu/bin/qemu-img create -b vm_debian.qcow2 -f qcow2 vm_clone.qcow2
 ```
 
 - Inspecter à froid l'image disque de la VM
