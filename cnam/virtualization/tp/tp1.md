@@ -43,11 +43,11 @@ $ cd $HOME/tp/virt
 
 http://wiki.qemu.org/Download
 
-- Prendre la dernière version : **2.9.0**
+- Prendre la dernière version : **2.12.0**
 
 ou directement :
 ```bash
-$ wget http://download.qemu.org/qemu-2.9.0.tar.xz
+$ wget http://download.qemu.org/qemu-2.12.0.tar.xz
 ```
 
 #### Récupérer une image ISO
@@ -56,7 +56,7 @@ Récupérer en parallèle une image iso de **Linux Debian** *netinstall*
 $ mkdir -p $HOME/tp/virt/iso/debian
 $ cd $HOME/tp/virt/iso/debian
 
-$ wget -c http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-8.8.0-amd64-netinst.iso
+$ wget -c http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso
 ```
 
 #### Compiler QEMU
@@ -65,12 +65,12 @@ $ wget -c http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-8.8.0-
 
 ```bash
 $ cd $HOME/tp/virt/
-$ tar xvJf qemu-2.9.0.tar.xz
+$ tar xvJf qemu-2.12.0.tar.xz
 ```
 - Se rendre dans le nouveau répertoire (pour configurer/compiler/installer qemu)
 
 ```bash
-$ cd qemu-2.9.0
+$ cd qemu-2.12.0
 ```
 - Lister les options possibles :
 
@@ -122,7 +122,7 @@ $ $HOME/tp/virt/qemu/bin/qemu-img info vm_debian.qcow2
 $ $HOME/tp/virt/qemu/bin/qemu-system-x86_64 \
 --enable-kvm \
 -drive file=vm_debian.qcow2,media=disk \
--drive file=$HOME/tp/virt/iso/debian/debian-8.8.0-amd64-netinst.iso,media=cdrom \
+-drive file=$HOME/tp/virt/iso/debian/debian-9.4.0-amd64-netinst.iso,media=cdrom \
 -boot order=dc \
 -m 512 -smp 2 \
 -netdev type=user,id=tp1 \
